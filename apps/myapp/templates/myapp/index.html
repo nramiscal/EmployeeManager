@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <style media="screen">
+            span {
+                font-weight: normal;
+            }
+        </style>
+        <meta charset="utf-8">
+        <title>Index Page</title>
+    </head>
+    <body>
+        <h1>All Employees</h1>
+        {% for user in users %}
+            <h3>Name: <span>{{user.fname}} {{user.lname}}</span></h3>
+            <h3>Manager: <a href="/manager/{{user.manager_id}}"><span>{{user.manager.fname}}</span></a></h3>
+            <hr>
+        {% endfor %}
+
+
+
+    </body>
+</html>

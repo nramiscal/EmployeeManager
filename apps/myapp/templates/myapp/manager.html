@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Manager Info</title>
+    </head>
+    <body>
+        <h1>Manager: {{manager.fname}} {{manager.lname}}</h2>
+        <h3>Employees:</h3>
+        {% for employee in employees %}
+            <p>{{employee.fname}}</p>
+        {% endfor %}
+        <br>
+        <a href="/"><button>Home</button></a>
+    </body>
+</html>
